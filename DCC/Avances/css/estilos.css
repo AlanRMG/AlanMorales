@@ -1,0 +1,133 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Roboto Condensed', Arial, Helvetica, sans-serif;
+  font-size: 16px; }
+
+.contenedor .contenedor-header {
+  width: 100%;
+  background-color: #ffba08;
+  overflow: hidden;
+  height: 1250%;
+  border-bottom: 5px solid #d00000; }
+  .contenedor .contenedor-header .boton {
+    float: left; }
+    .contenedor .contenedor-header .boton .btn-regresar {
+      background: #370617;
+      border: 2px solid transparent;
+      margin: 10px 10px;
+      padding: 15px 25px;
+      color: #fff;
+      border-radius: 30px;
+      font-weight: 700; }
+    .contenedor .contenedor-header .boton .btn-regresar:hover {
+      background: #d3d3d3;
+      color: #212529;
+      border: 2px solid #000; }
+  .contenedor .contenedor-header .titulo-avances {
+    clear: both;
+    text-align: center; }
+    .contenedor .contenedor-header .titulo-avances h1 {
+      color: #212529;
+      border: 2px solid #000;
+      display: inline-block;
+      padding: 1.2% 25%; }
+  .contenedor .contenedor-header .buscar {
+    float: right; }
+    .contenedor .contenedor-header .buscar label {
+      margin-right: 10px; }
+    .contenedor .contenedor-header .buscar .id {
+      padding: 5px;
+      width: 55%;
+      outline: none;
+      border: 2px solid #370617;
+      background-color: #d3d3d3;
+      color: #000;
+      font-weight: 700; }
+    .contenedor .contenedor-header .buscar .id:focus {
+      background-color: #370617;
+      color: #d3d3d3;
+      border: 2px solid #fff; }
+    .contenedor .contenedor-header .buscar .btn-buscar {
+      background: #370617;
+      border: 2px solid transparent;
+      margin: 10px 10px;
+      padding: 15px 25px;
+      color: #fff;
+      border-radius: 30px;
+      font-weight: 700; }
+    .contenedor .contenedor-header .buscar .btn-buscar:hover {
+      background: #d3d3d3;
+      color: #212529;
+      border: 2px solid #000; }
+.contenedor .contenedor-avances {
+  overflow: hidden;
+  background: #d3d3d3;
+  height: 1000px; }
+  .contenedor .contenedor-avances .fotos-avances {
+    height: 100%;
+    text-align: center; }
+    .contenedor .contenedor-avances .fotos-avances h3,
+    .contenedor .contenedor-avances .fotos-avances h4 {
+      color: #212529;
+      font-size: 30px;
+      margin: 0; }
+    .contenedor .contenedor-avances .fotos-avances p {
+      font-size: 18px; }
+    .contenedor .contenedor-avances .fotos-avances .cliente {
+      margin-top: 20px; }
+    .contenedor .contenedor-avances .fotos-avances .imagenes {
+      overflow: hidden;
+      width: 100%; }
+      .contenedor .contenedor-avances .fotos-avances .imagenes .foto {
+        display: inline-block;
+        margin: 20px 80px; }
+        .contenedor .contenedor-avances .fotos-avances .imagenes .foto img {
+          width: 100%;
+          vertical-align: top;
+          border-radius: 20px; }
+
+@media screen and (max-width: 800px) {
+  .contenedor .contenedor-header .boton .btn-regresar {
+    font-size: 12px; }
+  .contenedor .contenedor-header .buscar .buscarID,
+  .contenedor .contenedor-header .buscar .id,
+  .contenedor .contenedor-header .buscar .btn-buscar {
+    font-size: 12px; }
+  .contenedor .contenedor-header .titulo-avances {
+    width: 100%; }
+    .contenedor .contenedor-header .titulo-avances h1 {
+      font-size: 18px; }
+  .contenedor .contenedor-avances .fotos-avances .cliente h4 {
+    font-size: 20px; }
+  .contenedor .contenedor-avances .fotos-avances h3 {
+    font-size: 20px; } }
+@media screen and (max-width: 450px) {
+  .contenedor .contenedor-header .boton .btn-regresar {
+    font-size: 10px;
+    padding: 5px 10px; }
+  .contenedor .contenedor-header .buscar .buscarID,
+  .contenedor .contenedor-header .buscar .id,
+  .contenedor .contenedor-header .buscar .btn-buscar {
+    font-size: 10px; }
+  .contenedor .contenedor-header .buscar .id {
+    font-size: 10px;
+    width: 50%; }
+  .contenedor .contenedor-header .buscar .btn-buscar {
+    padding: 5px 10px; } }
+@media screen and (max-width: 348px) {
+  .contenedor .contenedor-header .boton .btn-regresar {
+    font-size: 8px;
+    padding: 5px 10px; }
+  .contenedor .contenedor-header .buscar .buscarID,
+  .contenedor .contenedor-header .buscar .id,
+  .contenedor .contenedor-header .buscar .btn-buscar {
+    font-size: 8px; }
+  .contenedor .contenedor-header .buscar .id {
+    font-size: 8px;
+    width: 50%; }
+  .contenedor .contenedor-header .buscar .btn-buscar {
+    padding: 5px 10px; } }
+
+/*# sourceMappingURL=estilos.css.map */

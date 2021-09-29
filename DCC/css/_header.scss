@@ -1,0 +1,71 @@
+@keyframes transiciones{
+    0%{top: 15%;}
+    50%{top: 25%;}
+    100%{top: 15%;}
+
+}
+@keyframes movimiento{
+    from{
+        background-position: bottom left;
+    }
+    to{
+        background-position: top right;
+    }
+}
+$color:#d3d3d3;
+header{
+    width: 100%;
+    background: $color url(../img/bg_2.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center 0;
+    animation: movimiento 10s infinite linear alternate;
+    .contenedor{
+        position: relative;
+        height: 450px;
+        .textos{
+            color:$color;
+            width: 100%;
+            position: absolute;
+            top:15%;
+            left: 20%;
+            margin-top: -52px;
+            animation-name: transiciones;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate;
+            .nombre{
+                font-size: 50px;
+                font-weight: 600;
+            }
+            p{
+                font-size: 25px;
+                font-weight: 300px;
+                font-style: italic;
+            }
+        }
+    }
+    .menu{
+        width: 100%;
+        text-align: start;
+        a{
+            text-decoration: none;
+            display: inline-block;
+            margin: 15px 10px;
+            color:$color;
+            font-weight:600;
+            padding: 10px;
+            text-decoration: underline;
+            position: relative;
+            cursor: pointer;
+        }
+        a{
+            &:hover{
+                color: $color;
+                background-color: #d00000;
+                border-radius: 10px;
+                text-decoration: none;
+            }
+        }
+    }
+}

@@ -1,0 +1,155 @@
+.main{
+    background: url(../img/textura.png);
+    background-repeat: repeat;
+    .servicios-acerca-de{
+        background-color: #ffba08;
+        overflow: hidden;
+        .contenedor{
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            height: 500px;
+            margin-right: 180px;
+            z-index: 10;
+            .titulo-servicio{
+                width: 70%;
+                text-align: center;
+                margin: 0 auto;
+                 .nombre{
+                     width: 100%;
+                     display: inline-block;
+                     margin-top: 100px; 
+                     font-size: 25px;
+                     margin-bottom: 50px;
+                     color:#fff;
+                     background-color: #212529;
+                     padding: 10px;
+                     border-radius: 20px;
+                 }
+             }
+             .posicionado{
+                position: absolute;
+                z-index: 10;
+                width: 75%;
+                 .contenedor-servicios,
+                 .contenedor-servicios2
+                 {
+                    border: 3px solid #d00000;
+                    padding: 5px;
+                    background-color: #370617;
+                    article{
+                        padding: 20px;
+                        p{
+                            font-style: italic;
+                            font-weight: 600;
+                            color:#fff;
+                        }
+                    }
+                 }
+             }
+             .contenedor-acerca-de{
+                position: relative;
+                z-index: 20;
+                border:none;
+                background-color: #fff;
+                float:right;
+                left:-50px;
+                top:20px;
+                box-shadow: 0px 0px 15px rgba(#000, 1);
+                width: 35%;
+                article{
+                    padding: 30px;
+                    .nombre{
+                        font-size: 25px;
+                        text-align: center;
+                        margin:auto; 
+                        color:#d00000;
+                    }
+                    p{
+                        line-height: 30px;
+                        text-align: justify;
+                        span{
+                            color:#023e8a;
+                            font-weight: 600;
+                        }
+                    }
+                }   
+            }
+        }// Fin contenedor general
+    }
+    .galeria{
+            overflow: hidden;
+            margin:auto;
+            .titulo{
+                width: 70%;
+                margin:auto;
+                .nombre{
+                    font-size: 25px;
+                    margin-bottom: 50px;
+                    font-weight: 600px;
+                    color:#fff;
+                    background-color: #212529;
+                    display: block;
+                    padding: 10px;
+                    border-radius: 20px;
+                    text-align: center;
+                }
+            }
+            .imagen{
+                width: 25%;
+                float: left;  
+                object-fit: cover; 
+                img{
+                    width: 100%;
+                    vertical-align: top;
+                    opacity: 0.8;
+                }
+                img{
+                    &:hover{
+                        opacity: 1;
+                        transition: all 0.4s ease;
+                    }
+                }
+            }
+    }
+    .ubicacion{
+        overflow: hidden;
+        background-color: #6a040f;
+        .contenedor{
+            margin: 30px auto;
+            overflow: hidden;
+            color:#fff;
+            h3{
+                text-align: center;
+                font-size: 25px;
+                font-weight: 600;  
+            }
+            .direccion{
+                float:left;
+            }
+            .horarios{
+                float: right;
+                overflow: hidden;
+                width: 50%;
+                h4{
+                    font-size: 16px;
+                    text-align: center;
+                }
+                .entre-semana,
+                .fin-de-semana{
+                    width: 50%;
+                    float: right;
+                    width: 50%;
+                    text-align: center;
+                }
+            }
+        }
+    }
+    .mapa{
+        overflow: hidden;
+        width: 100%;
+        iframe{
+            width: 100%;
+        }
+    }
+}
